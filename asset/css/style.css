@@ -1,0 +1,116 @@
+:root {
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+}
+
+::selection {
+    background-color: var(--bright-turquoise);
+    color: var(--outer-space);
+}
+
+header {
+    height: 60px;
+    background-color: darkgreen;
+    color: var(--heliotrope);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+body {
+    position: relative;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 20px;
+    background-color: var(--outer-space);
+    color: #4F4846;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    width: 25%;
+    background-color: var(--outer-space);
+    padding: 20px;
+    flex-wrap: wrap;
+    color: var(--heliotrope);
+}
+
+aside img {
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
+
+input,
+button {
+    width: 100%;
+    margin: 2% 0;
+    padding: 1%;
+    border: #4F4846;
+    border-radius: 20%;
+}
+
+
+section {
+    flex: 70%;
+    background-color: var(--outer-space);
+    padding: 20px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    color: var(--heliotrope);
+}
+
+article ul {
+    margin-left: 5%;
+    font-size: 110%;
+    list-style: circle;
+}
+
+.card .link {
+    display: none;
+}
+
+.card:hover .link {
+    display: block;
+}
+
+aside button:hover {
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
